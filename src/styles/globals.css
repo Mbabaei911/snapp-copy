@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "IranSansBold";
+  src: url("../../fonts/fa-Iran-sans-web-bold.woff2");
+}
+@font-face {
+  font-family: "IranSansLight";
+  src: url("../../fonts/fa-Iran-sans-web-light.woff2");
+}
+
+body {
+  direction: rtl;
+  font-family: "IranSansLight";
+}
+
+@layer components {
+  .fontBold {
+    font-family: "IranSansBold";
+  }
+  .primaryColor {
+    color: #21aa58;
+  }
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Change the background color of the pagination bullets */
+.swiper-pagination-bullet {
+  background-color: gray !important; 
+  opacity: 0.7; 
+  transition: background-color 0.3s
+}
+
+/* Change the background color of the active bullet */
+
+.swiper-pagination {
+  background-color: rgba(212, 212, 212, 0.747) !important;
+
+  width: fit-content !important;
+  
+  /* border: black 1px solid !important; */
+  border-radius:10px !important;
+  padding:0px 6px !important;
+ 
+  height:17px;
+  display: flex ;
+  align-items: center;
+  position: absolute  !important;
+  bottom: 0%  !important;
+  left: 50%  !important;
+  transform: translate(-50%, -50%)  !important;
+}
+.swiper-pagination-bullet {
+  width: 8px !important; /* Set width */
+  height: 8px !important; /* Set height */
+  margin: 0px 3px !important;
+  opacity: 1 !important;
+  background-color: rgba(207, 207, 207, 0.705) !important;
+  
+}
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+  opacity: 1  !important;
+}
