@@ -23,7 +23,7 @@ function SwiperComponent() {
       >
         <SwiperSlide>
           <Image
-            src={"/images/swiper/Market.jpg"}
+            src={"/images/homePage/swiper/Market.jpg"}
             alt="market "
             width={2000}
             height={2000}
@@ -32,7 +32,7 @@ function SwiperComponent() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src={"/images/swiper/Food.png"}
+            src={"/images/homePage/swiper/Food.png"}
             alt="market "
             width={2000}
             height={2000}
@@ -41,7 +41,7 @@ function SwiperComponent() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src={"/images/swiper/Driver.png"}
+            src={"/images/homePage/swiper/Driver.png"}
             alt="market "
             width={2000}
             height={2000}
@@ -49,7 +49,6 @@ function SwiperComponent() {
           ></Image>
         </SwiperSlide>
       </Swiper>
-      
     </div>
   );
 }

@@ -7,155 +7,155 @@ function SecondSectionComponent() {
       id: 1,
       description: "تاکسی اینترنتی",
       detail: "درخواست آنلاین خودرو",
-      src: "/images/secondSection/taxi.svg",
+      src: "/images/homePage/secondSection/taxi.svg",
       href: "/",
     },
     {
       id: 2,
       description: "سفارش آنلاین غذا",
       detail: "سفارش غذا، نان و شیرینی با اسنپ",
-      src: "/images/secondSection/food.svg",
+      src: "/images/homePage/secondSection/food.svg",
       href: "/",
     },
     {
       id: 3,
       description: "سوپرمارکت آنلاین",
       detail: "تهیه اقلامروزانه با اسنپ",
-      src: "/images/secondSection/Market-Orange-Final.png",
+      src: "/images/homePage/secondSection/Market-Orange-Final.png",
       href: "/",
     },
     {
       id: 4,
       description: "پیک موتوری",
       detail: "حمل و نقل انواع بسته",
-      src: "/images/secondSection/bike.svg",
+      src: "/images/homePage/secondSection/bike.svg",
       href: "/",
     },
     {
       id: 5,
       description: "درخواست وانت",
       detail: "حمل و نقل انواع بار",
-      src: "/images/secondSection/pickup.svg",
+      src: "/images/homePage/secondSection/pickup.svg",
       href: "/",
     },
     {
       id: 6,
       description: "سرویس اعتباری",
       detail: "خرید قسطی با اسنپ",
-      src: "/images/secondSection/Credit.svg",
+      src: "/images/homePage/secondSection/Credit.svg",
       href: "/",
     },
     {
       id: 7,
       description: "بلیط هواپیما داخلی",
       detail: "خرید بلیط پرواز داخلی",
-      src: "/images/secondSection/fdom-t.png",
+      src: "/images/homePage/secondSection/fdom-t.png",
       href: "/",
     },
     {
       id: 8,
       description: "بلیط هواپیما خارجی",
       detail: "خرید بلیط پرواز خارجی",
-      src: "/images/secondSection/intflight.svg",
+      src: "/images/homePage/secondSection/intflight.svg",
       href: "/",
     },
     {
       id: 9,
       description: "رزرو هتل",
       detail: "رزرو آنلاین هتل",
-      src: "/images/secondSection/hotel.svg",
+      src: "/images/homePage/secondSection/hotel.svg",
       href: "/",
     },
     {
       id: 10,
       description: "بلیط اتوبوس",
       detail: "گردشگری با اسنپ",
-      src: "/images/secondSection/bus.svg",
+      src: "/images/homePage/secondSection/bus.svg",
       href: "/",
     },
     {
       id: 11,
       description: "بلیط قطار",
       detail: "گردشگری با اسنپ",
-      src: "/images/secondSection/train.svg",
+      src: "/images/homePage/secondSection/train.svg",
       href: "/",
     },
     {
       id: 12,
       description: "فروشگاه",
       detail: "فروشگاه اسنپ",
-      src: "/images/secondSection/shop.svg",
+      src: "/images/homePage/secondSection/shop.svg",
       href: "/",
     },
     {
       id: 13,
       description: "پزشک و مشاور",
       detail: "درمان با اسنپ",
-      src: "/images/secondSection/doctor.svg",
+      src: "/images/homePage/secondSection/doctor.svg",
       href: "/",
     },
     {
       id: 14,
       description: "داروخانه",
       detail: "داروخانه آنلاین اسنپ",
-      src: "/images/secondSection/pharmacy.svg",
+      src: "/images/homePage/secondSection/pharmacy.svg",
       href: "/",
     },
     {
       id: 15,
       description: "بیمه",
       detail: "خرید آنلاین بیمه با اسنپ",
-      src: "/images/secondSection/Insurance.png",
+      src: "/images/homePage/secondSection/Insurance.png",
       href: "/",
     },
     {
       id: 16,
       description: "اسباب کشی منزل",
       detail: "خدمات اسباب کشی",
-      src: "/images/secondSection/moving.svg",
+      src: "/images/homePage/secondSection/moving.svg",
       href: "/",
     },
     {
       id: 17,
       description: "ثبت نام راننده  ",
       detail: "ثبت نام تاکسی اینترنتی اسنپ",
-      src: "/images/secondSection/driver.svg",
+      src: "/images/homePage/secondSection/driver.svg",
       href: "/",
     },
     {
       id: 18,
       description: "اسنپ!کلاب",
       detail: "باشگاه مشتریان اسنپ",
-      src: "/images/secondSection/club.svg",
+      src: "/images/homePage/secondSection/club.svg",
       href: "/",
     },
     {
       id: 19,
       description: "خرید شارژ",
       detail: "خرید آنلاین شارژ",
-      src: "/images/secondSection/wallet.png",
+      src: "/images/homePage/secondSection/wallet.png",
       href: "/",
     },
     {
       id: 20,
       description: "خرید بسته اینترنت",
       detail: "خرید بسته اینترنت",
-      src: "/images/secondSection/wallet.png",
+      src: "/images/homePage/secondSection/wallet.png",
       href: "/",
     },
     {
       id: 21,
       description: "اسنپ پرو",
       detail: "اشتراک حرفه ای اسنپ",
-      src: "/images/secondSection/Pro.png",
+      src: "/images/homePage/secondSection/Pro.png",
       href: "/",
     },
   ];
 
   return (
-    <div className="bg-[#f2f5f8]">
+    <div className="bg-[#F2F5F8]">
       <div className="text-center py-20">
-        <p className="fontBold text-xl xl:text-4xl">
+        <p className="fontBold text-xl md:text-2xl xl:text-4xl">
           یک اپلیکیشن، برای تمام نیازها
         </p>
       </div>
@@ -164,7 +164,7 @@ function SecondSectionComponent() {
         {data.map((item) => {
           return (
             <div
-              className="bg-white border rounded-3xl lg:hidden"
+              className="bg-white border rounded-3xl lg:hidden hover:scale-95 transition-all duration-100 hover:shadow-sm"
               key={item.id}
             >
               <Link
@@ -194,7 +194,7 @@ function SecondSectionComponent() {
         {data.map((item) => {
           return (
             <div
-              className="bg-white border rounded-3xl max-lg:hidden"
+              className="bg-white border rounded-3xl max-lg:hidden hover:scale-95 transition-all duration-100"
               key={item.id}
             >
               <Link href={item.href} className="flex px-4 py-4">

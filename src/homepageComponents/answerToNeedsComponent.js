@@ -8,7 +8,7 @@ function AnswerToNeedsComponent() {
       <div className="lg:hidden">
         <div className="mb-5 ">
           <Image
-            src={"/images/swiper/super-app.jpg"}
+            src={"/images/homePage/swiper/super-app.jpg"}
             alt={"super app image"}
             unoptimized
             width={2000}
@@ -33,7 +33,7 @@ function AnswerToNeedsComponent() {
           <div>
             <div className="bg-gray-100 rounded-2xl mt-9">
               <Image
-                src={"/images/answertoNeeds/easy.png"}
+                src={"/images/homePage/answerToNeeds/easy.png"}
                 alt="easy pic "
                 width={200}
                 unoptimized
@@ -50,7 +50,7 @@ function AnswerToNeedsComponent() {
           <div className="my-5">
             <div className="bg-gray-100 rounded-2xl mt-9">
               <Image
-                src={"/images/answertoNeeds/fast.png"}
+                src={"/images/homePage/answerToNeeds/fast.png"}
                 alt="easy pic "
                 width={200}
                 unoptimized
@@ -67,7 +67,7 @@ function AnswerToNeedsComponent() {
           <div className="my-5">
             <div className="bg-gray-100 rounded-2xl mt-9">
               <Image
-                src={"/images/answertoNeeds/eco.png"}
+                src={"/images/homePage/answerToNeeds/eco.png"}
                 alt="easy pic "
                 width={200}
                 unoptimized
@@ -89,7 +89,7 @@ function AnswerToNeedsComponent() {
         <div className="flex bg-red-10">
           <div className="grow">
             <Image
-              src={"/images/answerToNeeds/super-app.jpg"}
+              src={"/images/homePage/answerToNeeds/super-app.jpg"}
               alt="super app image"
               width={1000}
               height={1000}
@@ -114,7 +114,7 @@ function AnswerToNeedsComponent() {
         <div className="grid  grid-cols-3 gap-4 bg-yellow-40 w-[85%] 2xl:w-[70%] mx-auto -translate-y-16">
           <div className="borde border-blac mx-auto">
             <Image
-              src={"/images/answertoNeeds/easy.png"}
+              src={"/images/homePage/answerToNeeds/easy.png"}
               alt="easy pic "
               width={220}
               unoptimized
@@ -131,7 +131,7 @@ function AnswerToNeedsComponent() {
           </div>
           <div className="borde border-blac mx-auto">
             <Image
-              src={"/images/answertoNeeds/fast.png"}
+              src={"/images/homePage/answerToNeeds/fast.png"}
               alt="fast pic "
               width={220}
               unoptimized
@@ -148,7 +148,7 @@ function AnswerToNeedsComponent() {
           </div>
           <div className="borde border-blac mx-auto">
             <Image
-              src={"/images/answertoNeeds/eco.png"}
+              src={"/images/homePage/answerToNeeds/eco.png"}
               alt="eco pic "
               width={220}
               unoptimized
@@ -165,68 +165,6 @@ function AnswerToNeedsComponent() {
               </p>
             </div>
           </div>
-
-          {/* <div className="  border border-black bg-blue-200">
-            <div classname="border p-10">
-              <div className=" rounded-2xl border">
-                <Image
-                  src={"/images/answertoNeeds/easy.png"}
-                  alt="easy pic "
-                  width={200}
-                  unoptimized
-                  height={250}
-                  className="   bg-gray-100"
-                ></Image>
-              </div>
-              <div className="border">
-                <p className="text-[18px] fontBold   text-gray-700">آسان</p>
-                <p className="text-gray-500 text-xs  ">
-                  برای استفاده از هر کدام از خدمات سوپر‌اپ اسنپ کافی است وارد
-                  اپلیکیشن اسنپ شوید و روی آیکون مورد نظر بزنید.
-                </p>
-              </div>
-            </div>
-          </div> */}
-          {/* <div className="  border border-black  pr-10">
-            <div className="w-[250px] bg-gray-100  rounded-2xl ">
-              <Image
-                src={"/images/answertoNeeds/fast.png"}
-                alt="fast pic "
-                width={200}
-                unoptimized
-                height={250}
-                className=" mx-auto"
-              ></Image>
-            </div>
-            <div className="">
-              <p className="text-[18px] fontBold  my-4 text-gray-700">سریع</p>
-              <p className="text-gray-500 text-xs  w-[87%]">
-                قرار گرفتن خدمات مختلف در یک پلت‌فرم به صرفه‌جویی در زمان کمک
-                می‌کند. سوپراپ اسنپ پاسخی سریع به نیازهای رومزه‌ی شماست.
-              </p>
-            </div>
-          </div>
-          <div className="   pr-10">
-            <div className="w-[250px] bg-gray-100  rounded-2xl ">
-              <Image
-                src={"/images/answertoNeeds/eco.png"}
-                alt="eco pic "
-                width={200}
-                unoptimized
-                height={250}
-                className=" mx-auto"
-              ></Image>
-            </div>
-            <div className="">
-              <p className="text-[18px] fontBold  my-4 text-gray-700">
-                به صرفه
-              </p>
-              <p className="text-gray-500 text-xs  w-[87%]">
-                سوپراپ اسنپ علاوه بر زمان در هزینه‌های شما نیز صرفه‌جویی می‌کند
-                تا بهترین خدمات را با قیمتی منطقی دریافت کنید.
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

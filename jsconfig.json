@@ -1,7 +1,12 @@
+
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["./src/*"]
+      "@homepageComponents/*": ["homepageComponents/*"],
+      "@signupComponents/*": ["signupComponents/*"],
+      "@pages/*": ["pages/*"]
     }
-  }
+  },
+  "include": ["src/**/*"]
 }

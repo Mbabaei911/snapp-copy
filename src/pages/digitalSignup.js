@@ -1,19 +1,15 @@
-import React, { Fragment, useEffect } from "react";
-import { useSelector } from "react-redux";
-
-import HomePage from "@homepageComponents/homePage";
 import Navbar from "@homepageComponents/navbarComponent";
 import NavbarModal from "@homepageComponents/navbarModalComponent";
-import FooterComponent from "@homepageComponents/footerComponent";
-
+import FirstSection from "@signupComponents/firstSection";
+import React, { Fragment, useEffect } from "react";
+import { useSelector } from "react-redux";
 function Index() {
   const navbarIsToggled = useSelector(
     (state) => state.toggleNavbar.navbarIsToggled
   );
-  console.log(navbarIsToggled)
 
-  ///////////
-  ////making body not scrollable when modals are on
+  //   ///////////
+  //   ////making body not scrollable when modals are on
   useEffect(() => {
     if (navbarIsToggled) {
       document.body.style.overflow = "hidden";
@@ -22,15 +18,14 @@ function Index() {
       document.body.style.overflowY = "auto";
     }
   }, [navbarIsToggled]);
-  ///////////
-  ////end of making body not scrollable when modals are on
+  //   ///////////
+  //   ////end of making body not scrollable when modals are on
 
   return (
     <Fragment>
       <Navbar />
       <NavbarModal />
-      <HomePage />
-      <FooterComponent />
+      <FirstSection />
     </Fragment>
   );
 }

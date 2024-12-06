@@ -196,7 +196,7 @@ function NavbarModal() {
                 <Image
                   className="ml-4"
                   alt="cafe bazar logo "
-                  src={"/images/navbar/directdownload-icon.png"}
+                  src={"/images/homePage/navbar/directdownload-icon.png"}
                   height={25}
                   width={25}
                   unoptimized
@@ -209,7 +209,7 @@ function NavbarModal() {
                 <Image
                   className="ml-4"
                   alt="cafe bazar logo "
-                  src={"/images/navbar/cafebazaar.png"}
+                  src={"/images/homePage/navbar/cafebazaar.png"}
                   height={25}
                   width={25}
                   unoptimized
@@ -222,7 +222,7 @@ function NavbarModal() {
                 <Image
                   className="ml-4"
                   alt="cafe bazar logo "
-                  src={"/images/navbar/myketmarketicon.png"}
+                  src={"/images/homePage/navbar/myketmarketicon.png"}
                   height={25}
                   width={25}
                   unoptimized
@@ -235,7 +235,7 @@ function NavbarModal() {
                 <Image
                   className="ml-4"
                   alt="cafe bazar logo "
-                  src={"/images/navbar/snapp-pwa.svg"}
+                  src={"/images/homePage/navbar/snapp-pwa.svg"}
                   height={25}
                   width={25}
                   unoptimized
@@ -250,7 +250,7 @@ function NavbarModal() {
                 <Image
                   className="ml-4"
                   alt="cafe bazar logo "
-                  src={"/images/navbar/apple.png"}
+                  src={"/images/homePage/navbar/apple.png"}
                   height={25}
                   width={25}
                   unoptimized

@@ -39,17 +39,21 @@ function FooterComponent() {
         </Link>
       </div>
       <div className="flex justify-center  *:mx-1 my-2 *:text-gray-600 *:cursor-pointer">
-        <FiTwitter size={30} />
-        <AiOutlineInstagram size={30} />
-        <AiOutlineYoutube size={30} />
-        <CiLinkedin size={30} />
-        <TbBrandTelegram size={30} />
+        <FiTwitter className="hover:text-[#08a0e9]" size={30} />
+        <AiOutlineInstagram
+          size={30}
+          className="  hover:text-red-700"
+        />
+
+        <AiOutlineYoutube size={30} className="hover:text-[#ff0000]" />
+        <CiLinkedin size={30} className="hover:text-[#0e76a8]" />
+        <TbBrandTelegram size={30} className="hover:text-[#24A1DE]" />
       </div>
       <div className="flex justify-center mt-5 *:mx-2">
         <div>
           <Link href="/">
             <Image
-              src={"/images/footer/logoEnamad.png"}
+              src={"/images/homePage/footer/logoEnamad.png"}
               alt="emanad logo"
               height={120}
               width={120}
@@ -60,7 +64,7 @@ function FooterComponent() {
         <div>
           <Link href="/">
             <Image
-              src={"/images/footer/logoSamandehi.png"}
+              src={"/images/homePage/footer/logoSamandehi.png"}
               alt="samandehi logo"
               height={120}
               width={120}
@@ -71,7 +75,7 @@ function FooterComponent() {
         <div>
           <Link href="/">
             <Image
-              src={"/images/footer/logoEtehadiye.png"}
+              src={"/images/homePage/footer/logoEtehadiye.png"}
               alt="etehadiye logo"
               height={120}
               width={120}

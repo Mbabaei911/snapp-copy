@@ -13,9 +13,9 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   return (
-    <Fragment>
+    <div className="fixed z-50 right-0 top-0 left-0 m-0">
       {/* navbar for mobile */}
-      <div className="flex py-5 px-8 items-center justify-between border-b lg:hidden ">
+      <div className="flex py-5 px-8 items-center justify-between border-b lg:hidden  bg-white w-full z-50 ">
         <button onClick={() => dispatch(toggleNavbar())}>
           {navbarIsToggled ? (
             <AiOutlineClose size={22} />
@@ -23,22 +23,26 @@ const Navbar = () => {
             <RxHamburgerMenu size={22} />
           )}
         </button>
+        <Link href={"/"}>
+        
         <Image
-          src={"/images/navbar/snappTextLogo.svg"}
+          src={"/images/homePage/navbar/snappTextLogo.svg"}
           alt="snapp-text-logo"
           height={250}
           width={90}
           unoptimized
+          className="cursor-pointer"
         ></Image>
-        {/* end of navbar for mobile */}
+        </Link>
       </div>
+        {/* end of navbar for mobile */}
       {/* navbar for desktop */}
-      <div className="bg-white py-9 max-lg:hidden">
+      <div className="bg-white py-9 max-lg:hidden border shadow-sm">
         <div className="w-[90%]  flex items-center *:mx-3 mx-auto">
           <div>
             <Link href={"/"}>
               <Image
-                src={"/images/navbar/snappTextLogo.svg"}
+                src={"/images/homePage/navbar/snappTextLogo.svg"}
                 alt="snapp text logo"
                 height={40}
                 width={90}
@@ -127,7 +131,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* end of navbar for desktop */}
-    </Fragment>
+    </div>
   );
 };
 

@@ -13,13 +13,13 @@ function FirstSectionComponent() {
   };
 
   return (
-    <div className=" ">
+    <div className="  ">
       {/* first section mobile */}
-      <div className="bg-primaryColor p-6 text-white lg:hidden">
-        <p class=" text-2xl fontBold ">
+      <div className="bg-primaryColor px-6 py-10 mt-[67px]  text-white lg:hidden ">
+        <p className=" text-2xl fontBold ">
           تجربه‌ی زندگی راحت‌تر، سریع‌تر و به‌صرفه‌تر با سوپراپلیکیشن اسنپ!
         </p>
-        <p class="text-lg py-6">
+        <p className="text-lg py-6">
           از درخواست خودرو گرفته تا سفارش غذا، خرید سوپرمارکتی، خرید بلیط سفر،
           رزرو هتل و... را میتوانید با اسنپ انجام دهید.
         </p>
@@ -29,13 +29,13 @@ function FirstSectionComponent() {
       </div>
       {/*end of first section mobile */}
       {/* first section desktop */}
-      <div className="flex max-lg:hidden ">
+      <div className="flex max-lg:hidden mt-20 ">
         <div className=" flex-1 bg-primaryColor py-8 px-10 text-white  ">
           <div className="2xl:w-[75%]  flex flex-col items-start 2xl:mr-auto">
-            <h1 class=" text-4xl fontBold leading-snug">
+            <h1 className=" text-4xl fontBold leading-snug">
               تجربه‌ی زندگی راحت‌تر، سریع‌تر و به‌صرفه‌تر با سوپراپلیکیشن اسنپ!
             </h1>
-            <p class="text-lg py-6">
+            <p className="text-lg py-6">
               از درخواست خودرو گرفته تا سفارش غذا، خرید سوپرمارکتی، خرید بلیط
               سفر، رزرو هتل و... را میتوانید با اسنپ انجام دهید.
             </p>
@@ -83,7 +83,7 @@ function FirstSectionComponent() {
           <div className="w-full h-full overflow-hidden relative">
             <Image
               className="scale-x-[-1] object-cover"
-              src={"/images/firstSection/intro_desktop.jpg"}
+              src={"/images/homePage/firstSection/intro_desktop.jpg"}
               unoptimized
               alt="intro page"
               layout="fill"
