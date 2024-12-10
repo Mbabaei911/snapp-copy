@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect } from "react";
 import { useSelector } from "react-redux";
-
 import HomePage from "@homepageComponents/homePage";
 import Navbar from "@homepageComponents/navbarComponent";
 import NavbarModal from "@homepageComponents/navbarModalComponent";

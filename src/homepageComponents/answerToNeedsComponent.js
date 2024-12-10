@@ -31,7 +31,7 @@ function AnswerToNeedsComponent() {
             </p>
           </div>
           <div>
-            <div className="bg-gray-100 rounded-2xl mt-9">
+            <div className="bg-gray-100 rounded-2xl mt-9 hover:scale-95 transition-all duration-100">
               <Image
                 src={"/images/homePage/answerToNeeds/easy.png"}
                 alt="easy pic "
@@ -48,7 +48,7 @@ function AnswerToNeedsComponent() {
             </p>
           </div>
           <div className="my-5">
-            <div className="bg-gray-100 rounded-2xl mt-9">
+            <div className="bg-gray-100 rounded-2xl mt-9 hover:scale-95 transition-all duration-100">
               <Image
                 src={"/images/homePage/answerToNeeds/fast.png"}
                 alt="easy pic "
@@ -65,7 +65,7 @@ function AnswerToNeedsComponent() {
             </p>
           </div>
           <div className="my-5">
-            <div className="bg-gray-100 rounded-2xl mt-9">
+            <div className="bg-gray-100 rounded-2xl mt-9 hover:scale-95 transition-all duration-100">
               <Image
                 src={"/images/homePage/answerToNeeds/eco.png"}
                 alt="easy pic "
@@ -85,8 +85,8 @@ function AnswerToNeedsComponent() {
       </div>
 
       {/* for desktop version */}
-      <div className="max-lg:hidden bg-blue-30 mb-5">
-        <div className="flex bg-red-10">
+      <div className="max-lg:hidden  mb-5">
+        <div className="flex ">
           <div className="grow">
             <Image
               src={"/images/homePage/answerToNeeds/super-app.jpg"}
@@ -94,6 +94,7 @@ function AnswerToNeedsComponent() {
               width={1000}
               height={1000}
               unoptimized
+              priority
             />
           </div>
           <div className="grow px-9 w-[65%] mt-8">
@@ -119,7 +120,7 @@ function AnswerToNeedsComponent() {
               width={220}
               unoptimized
               height={250}
-              className="   bg-gray-100 rounded-2xl"
+              className="   bg-gray-100 rounded-2xl hover:scale-105 transition-all"
             ></Image>
             <div className="borde w-[220px] ">
               <p className="text-[18px] fontBold my-3  text-gray-700">آسان</p>
@@ -136,7 +137,7 @@ function AnswerToNeedsComponent() {
               width={220}
               unoptimized
               height={250}
-              className="   bg-gray-100 rounded-2xl"
+              className="   bg-gray-100 rounded-2xl hover:scale-105 transition-all"
             ></Image>
             <div className="borde w-[220px] ">
               <p className="text-[18px] fontBold my-3  text-gray-700">سریع</p>
@@ -153,7 +154,7 @@ function AnswerToNeedsComponent() {
               width={220}
               unoptimized
               height={250}
-              className="   bg-gray-100 rounded-2xl"
+              className="   bg-gray-100 rounded-2xl hover:scale-105 transition-all"
             ></Image>
             <div className="borde w-[220px] ">
               <p className="text-[18px] fontBold my-3  text-gray-700">

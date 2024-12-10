@@ -81,7 +81,7 @@ function DriversSection() {
           return (
             <div
               key={item.id}
-              className="bg-white shadow py-12 px-7 my-5 rounded-2xl hover:scale-105 transition-all "
+              className="bg-white shadow py-12 px-7 my-5 rounded-2xl hover:scale-95 transition-all "
             >
               <Image
                 alt="logo"

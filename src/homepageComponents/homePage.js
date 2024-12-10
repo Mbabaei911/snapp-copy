@@ -1,8 +1,5 @@
 import React from 'react'
-
-
 import FirstSectionComponent from '@homepageComponents/firstSectionComponent'
-
 import SecondSectionComponent from '@homepageComponents/secondSectionComponent'
 import SwiperComponent from '@homepageComponents/swiperComponent'
 import AnswerToNeedsComponent from '@homepageComponents/answerToNeedsComponent'

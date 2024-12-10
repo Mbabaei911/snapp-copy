@@ -6,11 +6,22 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleNavbar } from "../ReduxFeatures/toggleNavbarSlice";
 import Link from "next/link";
 import { BsChevronDown } from "react-icons/bs";
+import { useRouter } from "next/router";
+
 const Navbar = () => {
   const navbarIsToggled = useSelector(
     (state) => state.toggleNavbar.navbarIsToggled
   );
   const dispatch = useDispatch();
+
+  const router = useRouter(); // Get the router object
+  const currentPath = router.pathname; // Get the current pathname
+
+  // Determine the logo based on the current path
+  const logoSrc =
+    currentPath === "/digitalSignup"
+      ? "/images/homePage/navbar/snappLogoSignup.png" // Change this to your desired logo path
+      : "/images/homePage/navbar/snappTextLogo.svg"; // Default logo
 
   return (
     <div className="fixed z-50 right-0 top-0 left-0 m-0">
@@ -24,25 +35,24 @@ const Navbar = () => {
           )}
         </button>
         <Link href={"/"}>
-        
-        <Image
-          src={"/images/homePage/navbar/snappTextLogo.svg"}
-          alt="snapp-text-logo"
-          height={250}
-          width={90}
-          unoptimized
-          className="cursor-pointer"
-        ></Image>
+          <Image
+            src={logoSrc}
+            alt="snapp-text-logo"
+            height={250}
+            width={90}
+            unoptimized
+            className="cursor-pointer"
+          ></Image>
         </Link>
       </div>
-        {/* end of navbar for mobile */}
+      {/* end of navbar for mobile */}
       {/* navbar for desktop */}
       <div className="bg-white py-9 max-lg:hidden border shadow-sm">
         <div className="w-[90%]  flex items-center *:mx-3 mx-auto">
           <div>
             <Link href={"/"}>
               <Image
-                src={"/images/homePage/navbar/snappTextLogo.svg"}
+                src={logoSrc}
                 alt="snapp text logo"
                 height={40}
                 width={90}
