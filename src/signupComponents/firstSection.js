@@ -115,9 +115,9 @@ function FirstSection() {
                       error: "",
                     }));
                   }}
-                  className={`text-red-600 pl-2 pt-1 ${
+                  className={` pl-2 pt-1 ${
                     !states.isFocused && !states.inputValue ? "hidden" : ""
-                  } ${!states.error ? "text-green-600" : ""}
+                  } ${!states.error ? "text-green-600" : "text-red-600"}
                 ${states.isFocused && !states.inputValue ? "hidden" : ""}
                 
                 `}

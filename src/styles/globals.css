@@ -10,6 +10,10 @@
   font-family: "IranSansLight";
   src: url("../../fonts/fa-Iran-sans-web-light.woff2");
 }
+@font-face {
+  font-family: "numberFont";
+  src: url("../../fonts/numberFont.ttf");
+}
 
 body {
   direction: rtl;
@@ -25,6 +29,9 @@ body {
   }
   .ltr{
     direction:ltr
+  }
+  .fontNumber{
+    font-family:"numberFont"
   }
 }
 

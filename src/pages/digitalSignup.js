@@ -1,5 +1,7 @@
 import Navbar from "@homepageComponents/navbarComponent";
 import NavbarModal from "@homepageComponents/navbarModalComponent";
+import BenefitsSection from "@signupComponents/benefitsSection";
+import CalculatorSection from "@signupComponents/calculatorSection";
 import FirstSection from "@signupComponents/firstSection";
 import React, { Fragment, useEffect } from "react";
 import { useSelector } from "react-redux";
@@ -26,6 +28,8 @@ function Index() {
       <Navbar />
       <NavbarModal />
       <FirstSection />
+      <CalculatorSection />
+      <BenefitsSection />
     </Fragment>
   );
 }

@@ -9,7 +9,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: { primaryColor: "#21aa58" },
+      colors: { primaryColor: "#21aa58", calcSectionColor: "#0048d9" },
     },
   },
   plugins: [],
