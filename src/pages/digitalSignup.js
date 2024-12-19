@@ -2,7 +2,11 @@ import Navbar from "@homepageComponents/navbarComponent";
 import NavbarModal from "@homepageComponents/navbarModalComponent";
 import BenefitsSection from "@signupComponents/benefitsSection";
 import CalculatorSection from "@signupComponents/calculatorSection";
+import CommentSection from "@signupComponents/commentsSection";
 import FirstSection from "@signupComponents/firstSection";
+import QuestionSection from "@signupComponents/questionsSection";
+import SignupFooter from "@signupComponents/signupFooter";
+import StartSignup from "@signupComponents/startSignUp";
 import React, { Fragment, useEffect } from "react";
 import { useSelector } from "react-redux";
 function Index() {
@@ -30,6 +34,10 @@ function Index() {
       <FirstSection />
       <CalculatorSection />
       <BenefitsSection />
+      <QuestionSection />
+      <CommentSection />
+      <SignupFooter />
+      <StartSignup />
     </Fragment>
   );
 }

@@ -4,8 +4,8 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/homepagecomponents/*.{js,ts,jsx,tsx,mdx}",
-    "./src/signupcomponents/*.{js,ts,jsx,tsx,mdx}",
+    "./src/homepageComponents/*.{js,ts,jsx,tsx,mdx}",
+    "./src/signupComponents/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {

@@ -49,10 +49,10 @@ function DriversSection() {
   return (
     <div className="bg-gray-100 px-5 py-10">
       <div className="bg-red-20  w-full">
-        <p className="text-3xl fontBold text-gray-800 ">
+        <p className="text-3xl fontBold text-gray-800 text-center">
           در کمتر از 10 دقیقه ثبت نام کنید و به ناوگان اسنپ بپیوندید.
         </p>
-        <p className="text-xl mt-7 text-gray-600">
+        <p className="text-xl mt-7 text-gray-600 text-center">
           بدون نیاز به مراجعه حضوری، از طریق این صفحه، تمام مراحل ثبت نام را
           اینترنتی انجام دهید
         </p>

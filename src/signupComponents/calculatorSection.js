@@ -1,5 +1,10 @@
 import { IoMdArrowDropdown } from "react-icons/io";
 import React, { useState, useEffect, useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  hideStartSignup,
+  showStartSignup,
+} from "../ReduxFeatures/startSignupSlice";
 const CalculatorSection = () => {
   // calculator data
   const calculatorData = [
@@ -348,7 +353,7 @@ const CalculatorSection = () => {
   // states
   const [calculatorStates, setCalculatorStates] = useState({
     selectedCity: "تهران",
-    showCityOptions: true,
+    showCityOptions: false,
     selectedVehicle: "سواری",
     showVehicleOptions: false,
     selectedHour: 8,
@@ -424,7 +429,7 @@ const CalculatorSection = () => {
     };
   }, []);
 
-  console.log(calculatorStates);
+  // console.log(calculatorStates);
 
   // Effect to determine the position of the dropdown
   useEffect(() => {
@@ -465,10 +470,42 @@ const CalculatorSection = () => {
     foundItemIncome
   );
 
+  //////////////
+  ///
+
+  // Logic to determine if the StartSignup section should be hidden
+  const dispatch = useDispatch();
+  const handleScroll = () => {
+    const targetSection = document.getElementById("target-section");
+    const rect = targetSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      dispatch(showStartSignup()); // Show when the section is out of view
+    } else {
+      dispatch(hideStartSignup()); // Hide when the section is in view
+    }
+  };
+
+  // Add event listener for scroll
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // const isStartSignupVisible = useSelector(
+  //   (state) => state.startSignup.isVisible
+  // );
+  // const x = useSelector(
+  //   (state) => state.startSignup.isClicked
+  // );
+
+  // console.log("Start x:", x);
   // JSX
 
   return (
     <div
+      id="target-section"
       ref={sectionRef}
       className="bg-calcSectionColor py-10 px-10 lg:h-[440px] lg:py-0 lg:mt-20 "
     >

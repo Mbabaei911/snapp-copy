@@ -7,15 +7,39 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
 
+import { useSelector } from "react-redux";
 function FirstSection() {
+  //////////
+  //data for rendering
+  const registerData = [
+    {
+      id: 1,
+      src: "/images/digitalSignupPage/Car.webp",
+      title: "سواری",
+    },
+    {
+      id: 2,
+      src: "/images/digitalSignupPage/Bike.webp",
+      title: "موتور",
+    },
+    {
+      id: 3,
+      src: "/images/digitalSignupPage/Truck.webp",
+      title: "وانت",
+    },
+  ];
+
+  /////////////
+  ///states
   const [states, setStates] = useState({
     isFocused: false,
     inputValue: "",
     error: "",
     selectedVehicleId: 1,
   });
-  console.log(states);
 
+  ////////////
+  ///functions for handling input
   const handleFocus = () => {
     setStates((prev) => ({ ...prev, isFocused: true, error: "" }));
   };
@@ -51,23 +75,18 @@ function FirstSection() {
     document.getElementById("mobile-number").focus();
   };
 
-  const registerData = [
-    {
-      id: 1,
-      src: "/images/digitalSignupPage/Car.webp",
-      title: "سواری",
-    },
-    {
-      id: 2,
-      src: "/images/digitalSignupPage/Bike.webp",
-      title: "موتور",
-    },
-    {
-      id: 3,
-      src: "/images/digitalSignupPage/Truck.webp",
-      title: "وانت",
-    },
-  ];
+  /////////////
+  ///focusing on input when clicked on start signup
+  const isStartSignupClicked = useSelector(
+    (state) => state.startSignup.isClicked
+  );
+
+  if (isStartSignupClicked) {
+    document.getElementById("mobile-number").focus();
+  }
+
+  ///////////
+  ///JSX
 
   return (
     <div className="mt-[67px] lg:mt-[100px] bg-green-00">
@@ -229,7 +248,7 @@ function FirstSection() {
             })}
           </div>
           <div
-            className={`borde rounded-3xl mt-1 pt-2 mx-auto bg-white w-[80%]`}
+            className={` rounded-3xl mt-1 pt-2 mx-auto bg-white w-[80%] 2xl:w-[70%]`}
           >
             <div
               className={`my-2  border rounded-3xl mt-4 py-5 px-3  ${
@@ -428,8 +447,13 @@ function FirstSection() {
                   </p>
                 </li>
                 <ul className="list-disc list-inside mr-2">
-                  <li className="lg:text-lg">ظرفیت آن بالای ۱٬۳۶۰ کیلو باشد.</li>
-                  <li className="lg:text-lg"> وانت حمل شیشه (خرک‌دار)‌ نباشد.</li>
+                  <li className="lg:text-lg">
+                    ظرفیت آن بالای ۱٬۳۶۰ کیلو باشد.
+                  </li>
+                  <li className="lg:text-lg">
+                    {" "}
+                    وانت حمل شیشه (خرک‌دار)‌ نباشد.
+                  </li>
                 </ul>
               </ul>
             </div>
