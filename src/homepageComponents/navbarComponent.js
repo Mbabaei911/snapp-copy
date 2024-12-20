@@ -97,7 +97,7 @@ const Navbar = () => {
               </div>
 
               <div>
-                <p className="cursor-pointer ">ثبت نام راننده اسنپ</p>
+                <Link href={"/digitalSignup"}><p className="cursor-pointer ">ثبت نام راننده اسنپ</p></Link>
               </div>
               <div>
                 <p className="cursor-pointer "> باشگاه رانندگان</p>
