@@ -5,6 +5,8 @@ import {
   resetStartSignupIsClicked,
 } from "../ReduxFeatures/startSignupSlice";
 function StartSignup() {
+
+  
   const isStartSignupVisible = useSelector(
     (state) => state.startSignup.isVisible
   );

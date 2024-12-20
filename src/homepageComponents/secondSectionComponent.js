@@ -181,7 +181,7 @@ function SecondSectionComponent() {
                   />
                 </div>
                 <div>
-                  <p className="fontBold text-sm text-wrap mt-2">
+                  <p className="fontBold text-sm text-wrap mt-2 text-center">
                     {item.description}
                   </p>
                 </div>
